@@ -33,16 +33,6 @@ class AppRouter {
             characterModel: characterModel,
           ),
         );
-      // default:
-      //   return MaterialPageRoute(
-      //     builder: (context) => const Scaffold(
-      //       body: SafeArea(
-      //         child: Center(
-      //           child: Text('default'),
-      //         ),
-      //       ),
-      //     ),
-      //   );
     }
     return null;
   }
