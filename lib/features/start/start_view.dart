@@ -27,9 +27,8 @@ class StartView extends StatelessWidget {
             onPressed: () {
               MySharedPreferences.setBool('isFirstToOpenApp', false)
                   .then((value) {
-                context.pushNamedAndRemoveUntil(
+                context.pushReplacementNamed(
                   Routes.home,
-                  predicate: (route) => false,
                 );
               });
             },

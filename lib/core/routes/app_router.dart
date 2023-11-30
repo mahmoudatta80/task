@@ -8,7 +8,7 @@ import 'package:task/features/series_episodes/presentation/widgets/series_episod
 import 'package:task/features/start/start_view.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.start:
         return MaterialPageRoute(
@@ -33,16 +33,17 @@ class AppRouter {
             characterModel: characterModel,
           ),
         );
-      default:
-        return MaterialPageRoute(
-          builder: (context) => const Scaffold(
-            body: SafeArea(
-              child: Center(
-                child: Text('default'),
-              ),
-            ),
-          ),
-        );
+      // default:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const Scaffold(
+      //       body: SafeArea(
+      //         child: Center(
+      //           child: Text('default'),
+      //         ),
+      //       ),
+      //     ),
+      //   );
     }
+    return null;
   }
 }
